@@ -1,54 +1,102 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "NSLocationUsageDescription": {
-      "comment": "Location permission prompt",
-      "extractionState": "extracted_with_value",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "يُستخدم لحساب مواقيت الصلاة حسب موقعك."
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "comment" : "Bundle display name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Must Salah"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "Used to calculate prayer times for your location."
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Must Salah"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Digunakan untuk menghitung jadwal salat sesuai lokasi Anda."
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Must Salah"
           }
         }
       }
     },
-    "NSLocationWhenInUseUsageDescription": {
-      "comment": "Location permission prompt",
-      "extractionState": "extracted_with_value",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "يُستخدم لحساب مواقيت الصلاة حسب موقعك."
+    "CFBundleName" : {
+      "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Must Salah"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "Used to calculate prayer times for your location."
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Must Salah"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Digunakan untuk menghitung jadwal salat sesuai lokasi Anda."
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Must Salah"
+          }
+        }
+      }
+    },
+    "NSLocationUsageDescription" : {
+      "comment" : "Location permission prompt",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُستخدم لحساب مواقيت الصلاة حسب موقعك."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Used to calculate prayer times for your location."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Digunakan untuk menghitung jadwal salat sesuai lokasi Anda."
+          }
+        }
+      }
+    },
+    "NSLocationWhenInUseUsageDescription" : {
+      "comment" : "Location permission prompt",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُستخدم لحساب مواقيت الصلاة حسب موقعك."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Used to calculate prayer times for your location."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Digunakan untuk menghitung jadwal salat sesuai lokasi Anda."
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }
