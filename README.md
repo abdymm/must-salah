@@ -5,7 +5,7 @@ A lightweight macOS menu bar app that keeps the five daily prayers (plus Imsak a
 ```
 ☀️ Dzuhur 1h 05m          ← idle: next prayer + time left
 ☀️ 🟠 Dzuhur 09:42        ← last 10 minutes: live seconds countdown
-☀️ 🟢 Dzuhur · now        ← first 30 minutes after the prayer starts
+☀️ 🟢 Dzuhur · 12m ago    ← first 30 minutes after the prayer starts ("now" in the first minute)
 ```
 
 ## Features

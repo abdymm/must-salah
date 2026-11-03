@@ -17,6 +17,22 @@
         }
       }
     },
+    "%@ · %@ ago" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · منذ %@"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · %@ lalu"
+          }
+        }
+      }
+    },
     "%@ H" : {
       "localizations" : {
         "ar" : {

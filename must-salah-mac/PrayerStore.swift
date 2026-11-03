@@ -92,9 +92,18 @@ final class PrayerStore {
         switch state {
         case .idle(let next): "\(next.title) \(Fmt.hoursMinutes(next.date.timeIntervalSince(now)))"
         case .approaching(let next): "🟠 \(next.title) \(Fmt.minutesSeconds(next.date.timeIntervalSince(now)))"
-        case .active(let current): "🟢 " + String(localized: "\(current.title) · now")
+        case .active(let current): "🟢 " + activeTitle(current)
         case nil: "Must Salah"
         }
+    }
+
+    /// "Dzuhur · now" in the first minute, then "Dzuhur · 12m ago".
+    /// Ticks land on whole minutes while active, so this updates once a minute.
+    private func activeTitle(_ current: PrayerTime) -> String {
+        let elapsed = now.timeIntervalSince(current.date)
+        guard elapsed >= 60 else { return String(localized: "\(current.title) · now") }
+        let passed = Fmt.hoursMinutes(elapsed, rounding: .down)
+        return String(localized: "\(current.title) · \(passed) ago")
     }
 
     /// Icon of the prayer the menu bar is about: the next one while counting down, the current one while active.

@@ -135,7 +135,7 @@ struct ContentView: View {
             let time = Fmt.time(next.date)
             return String(localized: "at \(time)")
         case .active(let current):
-            let elapsed = Fmt.hoursMinutes(store.now.timeIntervalSince(current.date))
+            let elapsed = Fmt.hoursMinutes(store.now.timeIntervalSince(current.date), rounding: .down)
             return String(localized: "Started \(elapsed) ago")
         case nil:
             return nil

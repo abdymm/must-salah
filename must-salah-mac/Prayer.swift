@@ -184,9 +184,10 @@ enum Fmt {
         return String(localized: "\(day) H")
     }
 
-    /// "1h 23m" / "23m" — rounded up so it never reads "10m" while still idle.
-    static func hoursMinutes(_ interval: TimeInterval) -> String {
-        let minutes = max(0, Int((interval / 60).rounded(.up)))
+    /// "1h 23m" / "23m". Countdowns round up, so it never reads "10m" while still idle;
+    /// elapsed time rounds down, so "12m ago" doesn't jump ahead when a tick fires a moment late.
+    static func hoursMinutes(_ interval: TimeInterval, rounding: FloatingPointRoundingRule = .up) -> String {
+        let minutes = max(0, Int((interval / 60).rounded(rounding)))
         let h = String(minutes / 60), m = String(minutes % 60)
         if minutes >= 60 {
             let mm = String(format: "%02d", minutes % 60)
